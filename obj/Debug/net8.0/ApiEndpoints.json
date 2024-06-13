@@ -1,0 +1,75 @@
+[
+  {
+    "ContainingType": "gps_jamming_classifier_be.Controllers.DataManagementController",
+    "Method": "GetAllData",
+    "RelativePath": "api/DataManagement",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gps_jamming_classifier_be.Controllers.DataManagementController",
+    "Method": "DeleteData",
+    "RelativePath": "api/DataManagement/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gps_jamming_classifier_be.Controllers.FileUploadController",
+    "Method": "UploadFile",
+    "RelativePath": "api/FileUpload",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "file",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "numImages",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "fs",
+        "Type": "System.Double",
+        "IsRequired": false
+      },
+      {
+        "Name": "time",
+        "Type": "System.Double",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gps_jamming_classifier_be.Controllers.SpectrogramsController",
+    "Method": "GetSpectrogramsBySignalDataId",
+    "RelativePath": "api/Spectrograms/{signalDataId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "signalDataId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
