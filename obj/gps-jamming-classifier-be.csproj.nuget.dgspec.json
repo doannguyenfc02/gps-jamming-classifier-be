@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\SRC\\DATN\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj": {}
+    "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj": {}
   },
   "projects": {
-    "C:\\SRC\\DATN\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj": {
+    "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\SRC\\DATN\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj",
+        "projectUniqueName": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj",
         "projectName": "gps-jamming-classifier-be",
-        "projectPath": "C:\\SRC\\DATN\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj",
+        "projectPath": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\gps-jamming-classifier-be.csproj",
         "packagesPath": "C:\\Users\\nguyends\\.nuget\\packages\\",
-        "outputPath": "C:\\SRC\\DATN\\gps-jamming-classifier-be\\obj\\",
+        "outputPath": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\nguyends\\AppData\\Roaming\\NuGet\\NuGet.Config",

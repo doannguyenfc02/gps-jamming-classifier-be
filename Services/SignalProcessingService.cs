@@ -21,7 +21,7 @@ namespace gps_jamming_classifier_be.Services
             _logger = logger;
         }
 
-        public async Task<Object> ProcessFile(IFormFile file, int numImages, double fs, double time)
+        public async Task<Object> ProcessFile(IFormFile file, int numImages, double fs, double time, string fileName)
         {
             await _semaphore.WaitAsync();
 
@@ -97,7 +97,7 @@ namespace gps_jamming_classifier_be.Services
 
                         var signalData = new SignalData
                         {
-                            Description = "Processed signal data",
+                            FileName = fileName,
                             Timestamp = DateTime.UtcNow,
                             Spectrograms = new List<Spectrogram>()
                         };

@@ -19,7 +19,7 @@ namespace gps_jamming_classifier_be.Controllers
         }
 
         [HttpPost]
-        public async Task<IActionResult> UploadFile(IFormFile file, [FromForm] int numImages, [FromForm] double fs, [FromForm] double time)
+        public async Task<IActionResult> UploadFile(IFormFile file, [FromForm] int numImages, [FromForm] double fs, [FromForm] double time, [FromForm] string fileName)
         {
             if (file == null || file.Length == 0)
             {
@@ -29,7 +29,7 @@ namespace gps_jamming_classifier_be.Controllers
 
             try
             {
-                var resultDescription = await _signalProcessingService.ProcessFile(file, numImages, fs, time);
+                var resultDescription = await _signalProcessingService.ProcessFile(file, numImages, fs, time,fileName);
                 _logger.LogInformation("File processed successfully.");
                 return Ok(resultDescription);
             }

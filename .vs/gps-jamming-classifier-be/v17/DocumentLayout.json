@@ -1,0 +1,166 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\controllers\\spectrogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:controllers\\spectrogramscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:controllers\\fileuploadcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\controllers\\datamanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:controllers\\datamanagementcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\models\\signaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:models\\signaldata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\services\\signalprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:services\\signalprocessingservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\gps-jamming-classifier-be.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:gps-jamming-classifier-be.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|c:\\src\\gps_jamming_system\\gps-jamming-classifier-be\\migrations\\20240629083959_renamedescriptiontofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4E3E6F78-051E-4A0D-BC34-6EF6E2AEB70E}|gps-jamming-classifier-be.csproj|solutionrelative:migrations\\20240629083959_renamedescriptiontofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 104,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "20240629083959_RenameDescriptionToFile.cs",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Migrations\\20240629083959_RenameDescriptionToFile.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240629083959_RenameDescriptionToFile.cs",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Migrations\\20240629083959_RenameDescriptionToFile.cs",
+              "RelativeToolTip": "Migrations\\20240629083959_RenameDescriptionToFile.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:39:59.713Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DataManagementController.cs",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Controllers\\DataManagementController.cs",
+              "RelativeDocumentMoniker": "Controllers\\DataManagementController.cs",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Controllers\\DataManagementController.cs",
+              "RelativeToolTip": "Controllers\\DataManagementController.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAgwDQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:39:10Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:38:48.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SpectrogramsController.cs",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Controllers\\SpectrogramsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\SpectrogramsController.cs",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Controllers\\SpectrogramsController.cs",
+              "RelativeToolTip": "Controllers\\SpectrogramsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:36:33.755Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "SignalData.cs",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Models\\SignalData.cs",
+              "RelativeDocumentMoniker": "Models\\SignalData.cs",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Models\\SignalData.cs",
+              "RelativeToolTip": "Models\\SignalData.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-29T08:35:12.304Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileUploadController.cs",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Controllers\\FileUploadController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileUploadController.cs",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Controllers\\FileUploadController.cs",
+              "RelativeToolTip": "Controllers\\FileUploadController.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwCoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T04:52:01.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SignalProcessingService.cs",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Services\\SignalProcessingService.cs",
+              "RelativeDocumentMoniker": "Services\\SignalProcessingService.cs",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\Services\\SignalProcessingService.cs",
+              "RelativeToolTip": "Services\\SignalProcessingService.cs",
+              "ViewState": "AQIAAGYAAAAAAAAAAAAYwI4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T03:24:35.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-06-28T03:24:28.926Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "gps-jamming-classifier-be.http",
+              "DocumentMoniker": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\gps-jamming-classifier-be.http",
+              "RelativeDocumentMoniker": "gps-jamming-classifier-be.http",
+              "ToolTip": "C:\\SRC\\GPS_Jamming_System\\gps-jamming-classifier-be\\gps-jamming-classifier-be.http",
+              "RelativeToolTip": "gps-jamming-classifier-be.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-06-28T03:24:23.199Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

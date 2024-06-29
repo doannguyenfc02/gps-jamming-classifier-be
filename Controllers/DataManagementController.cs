@@ -23,7 +23,7 @@ namespace gps_jamming_classifier_be.Controllers
             var data = await _context.SignalDatas
                 .Select(d => new {
                     d.Id,
-                    d.Description,
+                    d.FileName,
                     d.Timestamp
                 })
                 .ToListAsync();

@@ -52,6 +52,11 @@
         "Name": "time",
         "Type": "System.Double",
         "IsRequired": false
+      },
+      {
+        "Name": "fileName",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []
