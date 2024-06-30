@@ -3,6 +3,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using gps_jamming_classifier_be.Data;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace gps_jamming_classifier_be.Controllers
 {
@@ -18,9 +19,12 @@ namespace gps_jamming_classifier_be.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAllData()
+        public async Task<IActionResult> GetUserData()
         {
+            var userId = User.FindFirstValue(ClaimTypes.Name); // Lấy userId từ token
+
             var data = await _context.SignalDatas
+                .Where(d => d.UserId == userId)
                 .Select(d => new {
                     d.Id,
                     d.FileName,
@@ -38,10 +42,12 @@ namespace gps_jamming_classifier_be.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteData(int id)
         {
-            var data = await _context.SignalDatas.FindAsync(id);
+            var userId = User.FindFirstValue(ClaimTypes.Name); // Lấy userId từ token
+
+            var data = await _context.SignalDatas.FirstOrDefaultAsync(d => d.Id == id && d.UserId == userId);
             if (data == null)
             {
-                return NotFound("Data not found.");
+                return NotFound("Data not found or you do not have permission to delete this data.");
             }
 
             _context.SignalDatas.Remove(data);

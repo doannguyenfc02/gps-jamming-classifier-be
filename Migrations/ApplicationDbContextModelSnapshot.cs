@@ -17,7 +17,7 @@ namespace gps_jamming_classifier_be.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.5")
+                .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
@@ -36,6 +36,10 @@ namespace gps_jamming_classifier_be.Migrations
 
                     b.Property<DateTime>("Timestamp")
                         .HasColumnType("datetime2");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -70,6 +74,27 @@ namespace gps_jamming_classifier_be.Migrations
                     b.HasIndex("SignalDataId");
 
                     b.ToTable("Spectrograms");
+                });
+
+            modelBuilder.Entity("gps_jamming_classifier_be.Models.User", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Password")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("gps_jamming_classifier_be.Models.Spectrogram", b =>

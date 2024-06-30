@@ -1,7 +1,9 @@
-﻿using gps_jamming_classifier_be.Services;
+﻿
+using gps_jamming_classifier_be.Services;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
+using System.Security.Claims;
 
 namespace gps_jamming_classifier_be.Controllers
 {
@@ -29,7 +31,9 @@ namespace gps_jamming_classifier_be.Controllers
 
             try
             {
-                var resultDescription = await _signalProcessingService.ProcessFile(file, numImages, fs, time,fileName);
+                var userId = User.FindFirstValue(ClaimTypes.Name); // Lấy userId từ token
+                var resultDescription = await _signalProcessingService.ProcessFile(file, numImages, fs, time, fileName, userId);
+                //var resultDescription = await _signalProcessingService.ProcessFile(file, numImages, fs, time, fileName);
                 _logger.LogInformation("File processed successfully.");
                 return Ok(resultDescription);
             }

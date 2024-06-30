@@ -21,7 +21,7 @@ namespace gps_jamming_classifier_be.Services
             _logger = logger;
         }
 
-        public async Task<Object> ProcessFile(IFormFile file, int numImages, double fs, double time, string fileName)
+        public async Task<Object> ProcessFile(IFormFile file, int numImages, double fs, double time, string fileName,string userId)
         {
             await _semaphore.WaitAsync();
 
@@ -87,7 +87,6 @@ namespace gps_jamming_classifier_be.Services
                     predictionResponse.EnsureSuccessStatusCode();
 
                     var predictionsJson = await predictionResponse.Content.ReadAsStringAsync();
-                    _logger.LogInformation($"Predictions JSON: {predictionsJson}");
 
                     var predictions = JsonConvert.DeserializeObject<List<PredictionResult>>(predictionsJson);
 
@@ -97,6 +96,7 @@ namespace gps_jamming_classifier_be.Services
 
                         var signalData = new SignalData
                         {
+                            UserId = userId,
                             FileName = fileName,
                             Timestamp = DateTime.UtcNow,
                             Spectrograms = new List<Spectrogram>()
@@ -108,7 +108,7 @@ namespace gps_jamming_classifier_be.Services
                             signalData.Spectrograms.Add(new Spectrogram
                             {
                                 ImageName = prediction.Image,
-                                DataBase64 = prediction.Base64, 
+                                DataBase64 = prediction.Base64,
                                 Class = prediction.Class
                             });
                         }
@@ -123,7 +123,7 @@ namespace gps_jamming_classifier_be.Services
                         };
                     }
 
-                    
+
                 }
             }
             finally

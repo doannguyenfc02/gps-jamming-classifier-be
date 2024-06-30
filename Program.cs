@@ -2,7 +2,10 @@ using gps_jamming_classifier_be.Data;
 using gps_jamming_classifier_be.Services;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using System.Text;
 using MongoDB.Driver;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -22,15 +25,13 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
 builder.Services.AddScoped<SignalProcessingService>();
 
 // Configure MongoDB
-//var mongoClient = new MongoClient(builder.Configuration.GetConnectionString("MongoDB"));
-//var mongoDatabase = mongoClient.GetDatabase(builder.Configuration["DatabaseName"]);
-//builder.Services.AddSingleton(mongoDatabase);
+// var mongoClient = new MongoClient(builder.Configuration.GetConnectionString("MongoDB"));
+// var mongoDatabase = mongoClient.GetDatabase(builder.Configuration["DatabaseName"]);
+// builder.Services.AddSingleton(mongoDatabase);
 
-
-//SQL
+// SQL
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("Jammer")));
-
 
 // Add CORS policy
 builder.Services.AddCors(options =>
@@ -50,6 +51,25 @@ builder.WebHost.ConfigureKestrel(serverOptions =>
     serverOptions.Limits.MaxResponseBufferSize = null; // Allow unlimited response buffer size
 });
 
+// Add JWT authentication
+var key = Encoding.ASCII.GetBytes(builder.Configuration["Jwt:Key"]);
+builder.Services.AddAuthentication(x =>
+{
+    x.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    x.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(x =>
+{
+    x.RequireHttpsMetadata = false;
+    x.SaveToken = true;
+    x.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuerSigningKey = true,
+        IssuerSigningKey = new SymmetricSecurityKey(key),
+        ValidateIssuer = false,
+        ValidateAudience = false
+    };
+});
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
@@ -67,5 +87,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.UseCors("AllowAllOrigins");
+app.UseAuthentication(); // Ensure authentication middleware is used
 app.MapControllers();
 app.Run();

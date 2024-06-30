@@ -1,4 +1,5 @@
 ﻿using gps_jamming_classifier_be.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace gps_jamming_classifier_be.Data
@@ -12,5 +13,7 @@ namespace gps_jamming_classifier_be.Data
 
         public DbSet<SignalData> SignalDatas { get; set; }
         public DbSet<Spectrogram> Spectrograms { get; set; }
+        public DbSet<User> Users { get; set; }
+
     }
 }
