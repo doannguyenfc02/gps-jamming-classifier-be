@@ -1,4 +1,4 @@
-using gps_jamming_classifier_be.Data;
+﻿using gps_jamming_classifier_be.Data;
 using gps_jamming_classifier_be.Services;
 using Microsoft.AspNetCore.Http.Features;
 using Microsoft.EntityFrameworkCore;
@@ -87,6 +87,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.UseCors("AllowAllOrigins");
-app.UseAuthentication(); // Ensure authentication middleware is used
+app.UseAuthentication(); 
 app.MapControllers();
 app.Run();

@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "gps_jamming_classifier_be.Controllers.DataManagementController",
-    "Method": "GetUserData",
+    "Method": "GetAllData",
     "RelativePath": "api/DataManagement",
     "HttpMethod": "GET",
     "IsController": true,
@@ -57,6 +57,38 @@
         "Name": "fileName",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gps_jamming_classifier_be.Controllers.LoginController",
+    "Method": "Login",
+    "RelativePath": "api/Login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "login",
+        "Type": "gps_jamming_classifier_be.Controllers.UserLogin",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "gps_jamming_classifier_be.Controllers.RegisterController",
+    "Method": "Register",
+    "RelativePath": "api/Register",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registration",
+        "Type": "gps_jamming_classifier_be.Controllers.UserRegistration",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []
