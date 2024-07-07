@@ -98,7 +98,8 @@ namespace gps_jamming_classifier_be.Services
                         var signalData = new SignalData
                         {
                             FileName = fileName,
-                            Timestamp = DateTime.UtcNow,
+                            //Timestamp = DateTime.UtcNow,
+                            Timestamp = TimeZoneInfo.ConvertTimeFromUtc(DateTime.UtcNow, TimeZoneInfo.Local),
                             Spectrograms = new List<Spectrogram>()
                         };
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("gps-jamming-classifier-be")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5ba2f845d279b25ed96312091b541dc7587853ed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b55ded5d0453850122ba27d805f67530b6ee7c94")]
 [assembly: System.Reflection.AssemblyProductAttribute("gps-jamming-classifier-be")]
 [assembly: System.Reflection.AssemblyTitleAttribute("gps-jamming-classifier-be")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

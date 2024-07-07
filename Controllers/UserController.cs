@@ -36,7 +36,11 @@ namespace gps_jamming_classifier_be.Controllers
         public IActionResult Login([FromBody] User loginUser)
         {
             var user = _context.Users.SingleOrDefault(u => u.Username == loginUser.Username && u.Password == loginUser.Password);
-            
+
+            if (user == null)
+            {
+                return BadRequest("Sai thông tin đăng nhập.");
+            }
 
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.ASCII.GetBytes("ThisIsASecretKeyForJwtOfAtLeast128BitLength");
